@@ -5,3 +5,12 @@
 data=list(map(int,input('ввелите числа:').split()))
 res=list(filter(lambda i: i>=10 and i<=99,data))
 print(res)
+
+# Дан список, вывести отдельно буквы и цифры, пользуясь filter.
+
+# [12,'sadf',5643] ---> ['sadf'] ,[12,5643]
+
+cal=[12,'sadf',5643]
+res=list(filter(lambda x: isinstance(x, int),cal))
+fes=list(filter(lambda x: isinstance(x, str),cal))
+print(res,fes)
