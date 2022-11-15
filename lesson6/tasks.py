@@ -14,3 +14,11 @@ cal=[12,'sadf',5643]
 res=list(filter(lambda x: isinstance(x, int),cal))
 fes=list(filter(lambda x: isinstance(x, str),cal))
 print(res,fes)
+
+
+# Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
+
+
+n = input('Введите вещественное число: ')
+sum = sum(map(int, n.replace('.', '')))
+print (sum)
